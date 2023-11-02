@@ -23,6 +23,10 @@ components:
     name: button_1
     layout_properties: {grid_position: 'VHRVEY,QHQVGR', slot: title}
     event_bindings: {click: button_1_click}
+  - name: label_1
+    properties: {text: View Opening Balance}
+    type: Label
+    layout_properties: {grid_position: 'TUIUTK,PDMIQJ'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
@@ -51,6 +55,7 @@ components:
       icon: ''}
     name: link_2
     layout_properties: {grid_position: 'VACXSR,NXVKEE'}
+    event_bindings: {click: link_2_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Loan Disbursement, font_size: null, wrap_on: mobile, font: '',
@@ -59,6 +64,7 @@ components:
       icon: ''}
     name: link_3
     layout_properties: {grid_position: 'YOWKFR,OIAUIU'}
+    event_bindings: {click: link_3_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: View Lost Oppurtunities, font_size: null, wrap_on: mobile,
@@ -67,6 +73,7 @@ components:
       icon: ''}
     name: link_4
     layout_properties: {grid_position: 'STUGSY,LZPJVK'}
+    event_bindings: {click: link_4_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Today's Dues, font_size: null, wrap_on: mobile, font: '',
@@ -75,6 +82,7 @@ components:
       icon: ''}
     name: link_5
     layout_properties: {grid_position: 'IYOROZ,FZTRJX'}
+    event_bindings: {click: link_5_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: View Closed Loans, font_size: null, wrap_on: mobile, font: '',
@@ -83,6 +91,7 @@ components:
       icon: ''}
     name: link_6
     layout_properties: {grid_position: 'DYPRRI,DDLMNA'}
+    event_bindings: {click: link_6_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: View Loan Extension Requests, font_size: null, wrap_on: mobile,
@@ -91,6 +100,7 @@ components:
       icon: ''}
     name: link_7
     layout_properties: {grid_position: 'OLPYLA,QWNXQB'}
+    event_bindings: {click: link_7_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: View Loan Foreclosure Requests, font_size: null, wrap_on: mobile,
@@ -99,6 +109,7 @@ components:
       icon: ''}
     name: link_8
     layout_properties: {grid_position: 'ZHLKRV,UCCSWF'}
+    event_bindings: {click: link_8_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Request Top-up Amount, font_size: null, wrap_on: mobile,
@@ -107,6 +118,7 @@ components:
       icon: ''}
     name: link_9
     layout_properties: {grid_position: 'WTAJYX,IDEXPI'}
+    event_bindings: {click: link_9_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: View/Download Portfolio, font_size: null, wrap_on: mobile,
@@ -115,6 +127,7 @@ components:
       icon: ''}
     name: link_10
     layout_properties: {grid_position: 'MLHJRR,ARZNXL'}
+    event_bindings: {click: link_10_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: View/Edit Profile, font_size: null, wrap_on: mobile, font: '',
