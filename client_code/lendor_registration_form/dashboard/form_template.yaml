@@ -57,6 +57,7 @@ components:
         italic: false, background: '', bold: false, underline: false, icon: ''}
       name: button_4
       layout_properties: {}
+      event_bindings: {click: button_4_click}
     - type: Button
       properties: {role: outlined-button, align: center, tooltip: '', border: '',
         enabled: true, foreground: black, visible: true, text: View Borrower Loan Requests,

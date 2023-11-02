@@ -23,3 +23,8 @@ class dashboard(dashboardTemplate):
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("lendor_registration_form.dashboard.opbal")
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form("")
+    pass
