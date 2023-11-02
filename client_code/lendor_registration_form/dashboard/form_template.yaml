@@ -130,6 +130,7 @@ components:
         italic: false, background: '', bold: false, underline: false, icon: ''}
       name: outlined_button_8
       layout_properties: {}
+      event_bindings: {click: outlined_button_8_click}
     - type: Button
       properties: {role: outlined-button, align: center, tooltip: '', border: '',
         enabled: true, foreground: black, visible: true, text: ' View/Send Notifications',

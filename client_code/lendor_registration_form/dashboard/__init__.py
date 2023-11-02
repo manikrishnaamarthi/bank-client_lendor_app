@@ -28,3 +28,7 @@ class dashboard(dashboardTemplate):
     """This method is called when the button is clicked"""
     open_form("")
     pass
+
+  def outlined_button_8_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form("len")
