@@ -1,24 +1,24 @@
-from ._anvil_designer import opbalTemplate
+from ._anvil_designer import ldTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
 import anvil.users
 
-class opbal(opbalTemplate):
+class ld(ldTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
 
-  def link_1_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.avlbal")
-
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("lendor_registration_form.dashboard")
+
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form("lendor_registration_form.avlbal")
 
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
@@ -26,7 +26,7 @@ class opbal(opbalTemplate):
 
   def link_3_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.ld")
+    open_form("lendor_registration_form.dashboard.vep")
 
   def link_4_click(self, **event_args):
     """This method is called when the link is clicked"""
@@ -58,7 +58,7 @@ class opbal(opbalTemplate):
 
   def link_11_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("'lendor_registration_form.dashboard.vep'")
+    open_form("lendor_registration_form.dashboard.opbal")
 
   def link_12_click(self, **event_args):
     """This method is called when the link is clicked"""

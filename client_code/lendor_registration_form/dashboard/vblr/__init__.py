@@ -1,11 +1,11 @@
-from ._anvil_designer import opbalTemplate
+from ._anvil_designer import vblrTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
 import anvil.users
 
-class opbal(opbalTemplate):
+class vblr(vblrTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -22,7 +22,7 @@ class opbal(opbalTemplate):
 
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vblr")
+    open_form("lendor_registration_form.dashboard.opbal")
 
   def link_3_click(self, **event_args):
     """This method is called when the link is clicked"""
