@@ -1,4 +1,4 @@
-from ._anvil_designer import about_user_formTemplate
+from ._anvil_designer import Lender_reg_form_1Template
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -8,13 +8,14 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class about_user_form(about_user_formTemplate):
+class Lender_reg_form_1(Lender_reg_form_1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
+    # Any code you write here will run before the form opens.
 
-  def login_sign_up_main_form_link_click(self, **event_args):
-    anvil.users.login_with_form()
-
+  def button_2_click(self, **event_args):
+    open_form('lendor_registration_form.Lender_reg_form_2')
+    """This method is called when the button is clicked"""
   

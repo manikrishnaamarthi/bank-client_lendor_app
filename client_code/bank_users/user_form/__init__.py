@@ -23,14 +23,14 @@ class user_form(user_formTemplate):
       open_form('bank_users.borrower_registration_main_form',user_id=self.user_id)
     else:
       if main_form_module.alert_mes(main_form_module.flag):
-        alert(f"Well Come {email} you account created Sucessfully")
+        alert(f"Wel Come!!! {email} your account created Sucessfully")
       else:
         alert("Complete Your Registration Form To Acess Full App ")
           
         
     
   def logout_user_form_link_click(self, **event_args):
-    alert("you Trying To Logout")
+    alert("Logout Sucessfully!!!")
     anvil.users.logout()
     open_form('bank_users.main_form')
 
@@ -46,7 +46,7 @@ class user_form(user_formTemplate):
   #--this metod is for lendor--#
 
   def lendor_user_form_link_click(self, **event_args):
-    open_form('lendor_registration_form.star_1_lendor_rgistration_form')
+    open_form('lendor_registration_form.Lender_reg_form_1')
 
   #--------------------------------------------------------------------#
   

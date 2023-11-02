@@ -1,4 +1,6 @@
-container: {type: ColumnPanel}
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
 components:
 - name: image_1_copy_1
   properties: {role: null, vertical_align: center, height: 90, tooltip: '', border: '',
@@ -9,82 +11,71 @@ components:
   layout_properties: {grid_position: 'BAPURZ,YCROWJ', full_width_row: true}
 - name: label_1_copy_1
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: Lender Registration, font_size: null, font: '', spacing_above: small,
+    visible: true, text: Institutional Type, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
     underline: false, icon: ''}
   type: Label
   layout_properties: {grid_position: 'PTHXGR,TBPTNI', full_width_row: true}
 - name: label_5_copy_1
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: Step-1, font_size: null, font: '', spacing_above: small,
+    visible: true, text: Step - 5, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
     underline: false, icon: ''}
   type: Label
   layout_properties: {grid_position: 'CDUWFV,IFPFZG', full_width_row: true}
 - name: label_2_copy_1
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: 'Applicant full name:', font_size: null, font: '', spacing_above: small,
+    visible: true, text: Registered office Address, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
     underline: false, icon: ''}
   type: Label
   layout_properties: {grid_position: 'WIVNLP,CCLZEH'}
-- name: applicant_full_name_text
-  properties: {background: '#ffffff', align: center}
-  type: TextBox
-  layout_properties: {grid_position: 'WIVNLP,IQIRWW'}
-  event_bindings: {pressed_enter: text_box_1_pressed_enter}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: 'theme:On Primary', bold: false, underline: false}
+  name: text_box_1
+  layout_properties: {grid_position: 'WIVNLP,HLARBT'}
 - name: label_3_copy_1
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: 'Gender:', font_size: null, font: '', spacing_above: small,
+    visible: true, text: Office Address proof, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
     underline: false, icon: ''}
   type: Label
-  layout_properties: {grid_position: 'SBRPLI,XXVIXI WXMJQQ,YWYTLI'}
-- name: label_4_copy_1
+  layout_properties: {grid_position: 'SBRPLI,XXVIXI'}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: 'theme:On Primary', bold: false, underline: false}
+  name: text_box_2
+  layout_properties: {grid_position: 'SBRPLI,JZGLRU'}
+- type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: 'City Residence:', font_size: null, font: '', spacing_above: small,
+    visible: true, text: Proof of verification, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
     underline: false, icon: ''}
-  type: Label
-  layout_properties: {grid_position: 'SBRPLI,XXVIXI TCRJBP,DAFDNO'}
-- name: drop_down_1_copy_1
-  properties:
-    role: null
-    align: full
-    tooltip: ''
-    placeholder: ''
-    border: ''
-    enabled: true
-    foreground: ''
-    items: ['', Male, Female, Others]
-    visible: true
-    font_size: null
-    font: ''
-    spacing_above: small
-    spacing_below: small
-    italic: false
-    background: '#ffffff'
-    bold: false
-    underline: false
-    include_placeholder: false
-  type: DropDown
-  layout_properties: {grid_position: 'SBRPLI,UDDCTK HIFFDW,IVBBBZ'}
-- name: text_box_2_copy_1
-  properties: {background: '#ffffff', align: center}
-  type: TextBox
-  layout_properties: {grid_position: 'SBRPLI,UDDCTK MPHCGJ,JGOHNO'}
-  event_bindings: {pressed_enter: text_box_2_pressed_enter}
-  data_bindings: []
-- name: spacer_1
-  properties: {height: 32}
-  type: Spacer
-  layout_properties: {grid_position: 'FKBBUH,OAEYXA'}
-- name: button_2_copy_1
-  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-    foreground: '', visible: true, text: Next, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-    underline: false, icon: 'fa:angle-double-right'}
-  type: Button
-  layout_properties: {grid_position: 'FKBBUH,XCLNHP'}
+  name: label_1
+  layout_properties: {grid_position: 'VFVHSN,WWQBKR'}
+- type: FileLoader
+  properties: {}
+  name: file_loader_1
+  layout_properties: {grid_position: 'VFVHSN,HFFYKP'}
+- type: Button
+  properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true,
+    foreground: 'theme:On Primary Container', visible: true, text: Prev, font_size: null,
+    font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+    background: '#0876E8', bold: true, underline: false, icon: 'fa:angle-double-left'}
+  name: button_1
+  layout_properties: {grid_position: 'NMUPUW,DVQZUP'}
+  event_bindings: {click: button_1_click}
+- type: Button
+  properties: {role: elevated-button, align: left, tooltip: '', border: '', enabled: true,
+    foreground: 'theme:On Primary Container', visible: true, text: Next, font_size: null,
+    font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+    background: '#0876E8', bold: true, underline: false, icon: 'fa:angle-double-right'}
+  name: button_2
+  layout_properties: {grid_position: 'NMUPUW,AVOSNA'}
   event_bindings: {click: button_2_click}
 is_package: true
