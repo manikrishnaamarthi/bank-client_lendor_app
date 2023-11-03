@@ -17,4 +17,9 @@ class about_user_form(about_user_formTemplate):
   def login_sign_up_main_form_link_click(self, **event_args):
     anvil.users.login_with_form()
 
+  def button_1_copy_click(self, **event_args):
+    open_form('lendor_registration_form.Lender_reg_form_1')
+    """This method is called when the button is clicked"""
+  
+
   
