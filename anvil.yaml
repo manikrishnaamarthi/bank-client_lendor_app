@@ -14,7 +14,7 @@ services:
 startup: {type: form, module: lendor_registration_form.dashboard}
 package_name: bank_client
 allow_embedding: false
-name: Banking_lender_app
+name: Banking_lender_app 1202
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {title: Person to Person App, description: this app provide services to person who are ready to invest and ready to give loan}
