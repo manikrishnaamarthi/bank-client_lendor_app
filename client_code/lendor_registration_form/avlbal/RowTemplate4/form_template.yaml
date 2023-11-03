@@ -1,0 +1,21 @@
+container: {type: DataRowPanel}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {column: ELLJZZ}
+  data_bindings:
+  - {property: text, code: 'self.item[''initial_commitment'']'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {column: IYYAZW}
+  data_bindings:
+  - {property: text, code: 'self.item[''top_up'']'}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {column: TKSWQS}
+  data_bindings:
+  - {property: text, code: 'self.item[''total_loan_disbursed'']'}
+is_package: true
