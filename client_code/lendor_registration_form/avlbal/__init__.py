@@ -29,3 +29,55 @@ class avlbal(avlbalTemplate):
             self.label1.text = f"User {self.user_id} not found or data not available."
         user_requests = app_tables.view_bor_loan_requests.search(user_id=self.user_id)
         self.repeating_panel_1.items = user_requests
+
+    def link_1_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("lendor_registration_form.dashboard.opbal")
+
+    def link_2_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("lendor_registration_form.dashboard.vblr")
+
+    def link_3_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("lendor_registration_form.dashboard.rta")
+
+    def link_4_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("lendor_registration_form.dashboard.td")
+
+    def link_5_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("lendor_registration_form.dashboard.td")
+
+    def link_6_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("lendor_registration_form.dashboard.vcl")
+
+    def link_7_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("lendor_registration_form.dashboard.vler")
+
+    def link_8_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("lendor_registration_form.dashboard.vlfr")
+
+    def link_9_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("")
+
+    def link_10_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("lendor_registration_form.dashboard.vdp")
+
+    def link_11_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("lendor_registration_form.dashboard.vsn")
+
+    def link_13_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("lendor_registration_form.dashboard.cp")
+
+    def button_1_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      open_form("lendor_registration_form.dashboard")

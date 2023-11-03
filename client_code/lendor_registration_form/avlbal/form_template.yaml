@@ -24,6 +24,14 @@ components:
       background: '#0876e8', bold: true, underline: false, icon: 'fa:backward'}
     name: button_1
     layout_properties: {grid_position: 'XNCACN,TSTLHG'}
+    event_bindings: {click: button_1_click}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: Available Balance, font_size: 22, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'WNCZMD,SNQHHR'}
   - type: ColumnPanel
     properties: {col_widths: '{}'}
     name: column_panel_2
@@ -74,13 +82,16 @@ components:
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Your Availble Balance :', font_size: null, font: '',
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: true, underline: false, icon: ''}
+        visible: true, text: 'Your Availble Balance :', font_size: 20, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
       name: label_1
       layout_properties: {}
     - type: Label
-      properties: {}
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:On
+          Primary Container', visible: true, text: '', font_size: 25, font: '', spacing_above: small,
+        icon_align: right_edge, spacing_below: small, italic: false, background: '',
+        bold: true, underline: false, icon: 'fa:money'}
       name: output_lbl
       layout_properties: {grid_position: 'FBOTIX,HXFZCC'}
 - type: FlowPanel
@@ -88,7 +99,9 @@ components:
   name: navbar_links
   layout_properties: {slot: nav-right}
 - type: ColumnPanel
-  properties: {}
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '', spacing_below: small,
+    background: ''}
   name: column_panel_1
   layout_properties: {slot: left-nav}
   components:
