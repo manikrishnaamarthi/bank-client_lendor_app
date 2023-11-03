@@ -23,10 +23,27 @@ components:
     name: button_1
     layout_properties: {grid_position: 'VHRVEY,QHQVGR', slot: title}
     event_bindings: {click: button_1_click}
-  - name: label_1
-    properties: {text: View Opening Balance}
-    type: Label
-    layout_properties: {grid_position: 'TUIUTK,PDMIQJ'}
+  - name: outlined_card_1
+    properties: {role: outlined-card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'YSPPPL,UYWPPA'}
+    components:
+    - name: label_1
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+        visible: true, text: View Opening Balance, font_size: 25, font: a, spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: true, icon: ''}
+      type: Label
+      layout_properties: {grid_position: 'APUAAI,JRGEMI'}
+    - name: output_lbl
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:On
+          Primary Container', visible: true, text: '', font_size: 18, font: '', spacing_above: small,
+        icon_align: right, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: 'fa:money'}
+      type: Label
+      layout_properties: {grid_position: 'HQIMIG,DHSQPE'}
+      data_bindings:
+      - {property: text, code: 'self.item[''initial_commitment'']'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
