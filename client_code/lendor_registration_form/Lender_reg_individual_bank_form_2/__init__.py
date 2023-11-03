@@ -17,6 +17,7 @@ class Lender_reg_individual_bank_form_2(Lender_reg_individual_bank_form_2Templat
 
   def button_2_click(self, **event_args):
     alert("Individual lender Registration Completed!")
+    open_form('lendor_registration_form.dashboard')
 
   def button_1_click(self, **event_args):
     open_form('lendor_registration_form.Lender_reg_individual_bank_form_1')
