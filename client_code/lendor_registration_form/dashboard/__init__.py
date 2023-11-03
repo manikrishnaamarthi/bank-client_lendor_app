@@ -15,13 +15,9 @@ class dashboard(dashboardTemplate):
 
     # Any code you write here will run before the form opens.
 
-  def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form("bank_users.user_form")
 
-  def button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form("bank_users.main_form")
+
+
 
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -78,6 +74,14 @@ class dashboard(dashboardTemplate):
   def outlined_button_10_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("lendor_registration_form.dashboard.cp")
+
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form("bank_users.user_form")
+
+  def link_2_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form("bank_users.main_form")
     
 
   
