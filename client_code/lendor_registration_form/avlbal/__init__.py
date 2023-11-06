@@ -17,7 +17,7 @@ class avlbal(avlbalTemplate):
         self.user_id = '9502'
 
         # Fetch the data for the specific user from your table
-        user_request = app_tables.view_bor_loan_requests_2.get(user_id=self.user_id)
+        user_request = app_tables.view_bor_loan_requests.get(user_id=self.user_id)
 
         if user_request:
             initial_commitment = user_request['initial_commitment']

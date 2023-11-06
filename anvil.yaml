@@ -124,21 +124,4 @@ db_schema:
     server: full
     columns: []
     title: lendor
-  view_bor_loan_requests_2:
-    title: view_bor_loan_requests
-    client: full
-    server: full
-    columns:
-    - name: initial_commitment
-      admin_ui: {width: 200}
-      type: string
-    - name: top_up
-      admin_ui: {width: 200}
-      type: string
-    - name: total_loan_disbursed
-      admin_ui: {width: 200}
-      type: string
-    - name: user_id
-      admin_ui: {width: 200}
-      type: string
 renamed: true
