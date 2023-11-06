@@ -95,6 +95,9 @@ db_schema:
     - name: last_confirm
       admin_ui: {width: 200, order: 17}
       type: bool
+    - name: city
+      admin_ui: {width: 200, order: 14.5}
+      type: string
     title: user_profile
   borrower:
     title: borrower
