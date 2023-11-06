@@ -26,5 +26,11 @@ class Lender_reg_form_1(Lender_reg_form_1Template):
     else:
       anvil.server.call('add_lendor_frist_form',name,gender,city)
       open_form('lendor_registration_form.Lender_reg_form_2')
+      self.clear_inputs()
+  def clear_inputs(self):
+    self.text_box_1.text = ''
+    self.drop_down_1_copy_1.selected_value = ''
+    self.text_box_2.text = ''
+      
      
     

@@ -25,7 +25,10 @@ class Lender_reg_form_2(Lender_reg_form_2Template):
     investment=self.drop_down_1.selected_value
     mobile = self.text_box_1.text
     email = self.text_box_2.text
-    open_form('lendor_registration_form.Lender_reg_form_3')
+    if not investment or not mobile or not email :
+      Notification("Please fill all the fields").show()
+    else:
+     open_form('lendor_registration_form.Lender_reg_form_3')
     """This method is called when the button is clicked"""
     
     
