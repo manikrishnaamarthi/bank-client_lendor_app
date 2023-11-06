@@ -11,7 +11,7 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: bank_users.main_form}
+startup: {type: form, module: lendor_registration_form.avlbal}
 package_name: bank_client
 allow_embedding: false
 name: Banking_lender_app 1202
@@ -124,7 +124,7 @@ db_schema:
     server: full
     columns: []
     title: lendor
-  view_bor_loan_requests:
+  view_bor_loan_requests_2:
     title: view_bor_loan_requests
     client: full
     server: full
