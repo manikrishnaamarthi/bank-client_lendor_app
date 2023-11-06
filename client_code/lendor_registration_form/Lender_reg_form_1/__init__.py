@@ -16,13 +16,13 @@ class Lender_reg_form_1(Lender_reg_form_1Template):
     # Any code you write here will run before the form opens.
 
   def button_2_click(self, **event_args):
-    name = self.text_box_1.text
-    gender = self.drop_down_1_copy_1
-    city = self.text_box_2.text
-    if not name or not city or not gender:
-      Notification("Please fill all the fields").show()
-    else:
-      anvil.server.call('add_lendor_frist_form',name,gender,city)
+    #name = self.text_box_1.text
+    #gender = self.drop_down_1_copy_1
+    #city = self.text_box_2.text
+    #if not name or not city or not gender:
+      #Notification("Please fill all the fields").show()
+    #else:
+      #anvil.server.call('add_lendor_frist_form',name,gender,city)
       
     open_form('lendor_registration_form.Lender_reg_form_2')
     """This method is called when the button is clicked"""
