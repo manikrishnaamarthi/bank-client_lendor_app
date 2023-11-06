@@ -8,4 +8,5 @@ import anvil.server
 
 @anvil.server.callable
 def add_lendor_frist_form(name,gender,city):
-  app_tables.lendor.add_row(name=name,gender='gender',city=city)
+  app_tables.lendor.add_row(name=name,gender=gender,city=city)
+  

@@ -17,15 +17,14 @@ class Lender_reg_form_1(Lender_reg_form_1Template):
 
   def button_2_click(self, **event_args):
     name = self.text_box_1.text
-    gender = self.drop_down_1_copy_1
+    gender = self.drop_down_1_copy_1.selected_value
     city = self.text_box_2.text
     #user_id = self.user_id
-    
-    if not name or not city or not gender:
-      Notification("Please fill all the fields").show()
+
+    if not name or not gender or not city:
+     Notification("Please fill all fields").show()
     else:
-     anvil.server.call('add_lendor_frist_form',name,gender,city)
-      
-    open_form('lendor_registration_form.Lender_reg_form_2')
-    """This method is called when the button is clicked"""
-  
+      anvil.server.call('add_lendor_frist_form',name,gender,city)
+      open_form('lendor_registration_form.Lender_reg_form_2')
+     
+    
