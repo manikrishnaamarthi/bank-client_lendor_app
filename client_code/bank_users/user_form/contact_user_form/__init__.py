@@ -16,3 +16,6 @@ class contact_user_form(contact_user_formTemplate):
 
   def login_sign_up_main_form_link_click(self, **event_args):
     anvil.users.login_with_form()
+
+  
+  
