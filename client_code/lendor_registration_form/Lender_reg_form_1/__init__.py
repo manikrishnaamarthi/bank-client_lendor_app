@@ -9,7 +9,9 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class Lender_reg_form_1(Lender_reg_form_1Template):
-  def __init__(self, **properties):
+  def __init__(self,user_id, **properties):
+    self.userId = user_id
+    
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
@@ -19,13 +21,14 @@ class Lender_reg_form_1(Lender_reg_form_1Template):
     name = self.text_box_1.text
     gender = self.drop_down_1_copy_1.selected_value
     city = self.text_box_2.text
-    #user_id = self.user_id
+    user_id = self.userId
+    
 
     if not name or not gender or not city:
      Notification("Please fill all fields").show()
     else:
-      anvil.server.call('add_lendor_frist_form',name,gender,city)
-      open_form('lendor_registration_form.Lender_reg_form_2')
+      anvil.server.call('add_lendor_frist_form',name,gender,city,user_id)
+      open_form('lendor_registration_form.Lender_reg_form_2',user_id = user_id)
       self.clear_inputs()
   def clear_inputs(self):
     self.text_box_1.text = ''
