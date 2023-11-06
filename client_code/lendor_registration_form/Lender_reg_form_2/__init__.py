@@ -25,6 +25,7 @@ class Lender_reg_form_2(Lender_reg_form_2Template):
     investment=self.drop_down_1.selected_value
     mobile = self.text_box_1.text
     email = self.text_box_2.text
+    photo = self.file_loader_1.file
     if not investment or not mobile or not email :
       Notification("Please fill all the fields").show()
     else:
