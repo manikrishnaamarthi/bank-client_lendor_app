@@ -14,7 +14,7 @@ class avlbal(avlbalTemplate):
         #self.repeating_panel_1.items = app_tables.view_bor_loan_requests.search(self.user_id)
 
         # Define the user ID for the specific user you want to retrieve the available balance for
-        self.user_id = '9502'
+        self.user_id = '1000'
 
         # Fetch the data for the specific user from your table
         user_request = app_tables.view_bor_loan_requests.get(user_id=self.user_id)

@@ -24,7 +24,7 @@ class Lender_reg_form_1(Lender_reg_form_1Template):
     #if not name or not city or not gender:
       #Notification("Please fill all the fields").show()
    #else:
-      #nvil.server.call('add_lendor_frist_form',name,gender,city,user_id)
+      #anvil.server.call('add_lendor_frist_form',name,gender,city,user_id)
       
     open_form('lendor_registration_form.Lender_reg_form_2')
     """This method is called when the button is clicked"""
