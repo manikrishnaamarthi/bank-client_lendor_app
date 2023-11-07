@@ -16,6 +16,10 @@ class Lender_reg_form_6(Lender_reg_form_6Template):
     # Any code you write here will run before the form opens.
 
   def button_2_click(self, **event_args):
+    address_type = self.drop_down_1.selected_value
+    house_no = self.text_box_1.text
+    building_name = self.text_box_2.text
+    street = self.text_box_3.text
     open_form('lendor_registration_form.Lender_reg_form_7')
     """This method is called when the button is clicked"""
 
