@@ -59,9 +59,6 @@ db_schema:
     - name: full_name
       admin_ui: {width: 200}
       type: string
-    - name: mobile
-      admin_ui: {width: 200}
-      type: number
     - name: mobile_check
       admin_ui: {width: 200}
       type: bool
@@ -71,21 +68,12 @@ db_schema:
     - name: gender
       admin_ui: {width: 200, order: 7}
       type: string
-    - name: date_of_birth
-      admin_ui: {width: 200, order: 8}
-      type: date
     - name: aadhaar_photo
       admin_ui: {width: 200, order: 12}
-      type: media
-    - name: pan_photo
-      admin_ui: {width: 200, order: 13}
       type: media
     - name: profile_status
       admin_ui: {width: 200}
       type: bool
-    - name: aadhaar_no
-      admin_ui: {width: 200, order: 14}
-      type: number
     - name: pan_number
       admin_ui: {width: 200, order: 15}
       type: string
@@ -98,8 +86,8 @@ db_schema:
     - name: city
       admin_ui: {width: 200, order: 14.5}
       type: string
-    - name: city_2
-      admin_ui: {width: 200, order: 19}
+    - name: investment
+      admin_ui: {width: 200, order: 18}
       type: string
     title: user_profile
   borrower:
