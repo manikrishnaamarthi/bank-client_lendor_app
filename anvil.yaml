@@ -122,6 +122,21 @@ db_schema:
     - name: street
       admin_ui: {width: 200, order: 35}
       type: string
+    - name: landmark
+      admin_ui: {width: 200, order: 36}
+      type: string
+    - name: state
+      admin_ui: {width: 200, order: 37}
+      type: string
+    - name: pincode
+      admin_ui: {width: 200, order: 38}
+      type: string
+    - name: lending_type
+      admin_ui: {width: 200, order: 39}
+      type: string
+    - name: lending_period
+      admin_ui: {width: 200, order: 40}
+      type: string
     title: user_profile
   borrower:
     title: borrower

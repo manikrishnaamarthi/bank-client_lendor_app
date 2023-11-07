@@ -56,6 +56,24 @@ def add_lendor_six_form(address_type,house_no,building_name,street,user_id):
     row[0]['house_no'] = house_no
     row[0]['building_name'] = building_name
     row[0]['street'] = street
+
+
+@anvil.server.callable
+def add_lendor_seven_form(landmark,city,state,pincode,user_id):
+  row = app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['landmark'] = landmark
+    row[0]['city'] = city
+    row[0]['state'] = state
+    row[0]['pincode'] = pincode
     
+@anvil.server.callable
+def add_lendor_eight_form(lending_type,investment,lending_period,user_id):
+  row = app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['lending_type'] = lending_type
+    row[0]['lending_period'] = lending_period
+    row[0]['investment'] = investment
     
+       
   
