@@ -33,16 +33,16 @@ components:
   - type: Button
     properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Borrower, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
+      icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+      bold: false, underline: false, icon: ''}
     name: borrower_user_form_link
     layout_properties: {grid_position: 'YBRDSP,JLWAJS'}
     event_bindings: {click: borrower_user_form_link_click}
   - type: Button
     properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Lendor, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
+      icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+      bold: false, underline: false, icon: ''}
     name: lendor_user_form_link
     layout_properties: {grid_position: 'YBRDSP,PWLWRA'}
     event_bindings: {click: lendor_user_form_link_click}
