@@ -9,7 +9,8 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class Lender_reg_form_6(Lender_reg_form_6Template):
-  def __init__(self, **properties):
+  def __init__(self,user_id, **properties):
+    self.userId = user_id
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
@@ -20,7 +21,9 @@ class Lender_reg_form_6(Lender_reg_form_6Template):
     house_no = self.text_box_1.text
     building_name = self.text_box_2.text
     street = self.text_box_3.text
-    open_form('lendor_registration_form.Lender_reg_form_7')
+    user_id = self.userId
+    anvil.server.call('add_lendor_six_form',address_type,house_no,building_name,street,user_id)
+    open_form('lendor_registration_form.Lender_reg_form_7',user_id = user_id)
     """This method is called when the button is clicked"""
 
   def button_1_click(self, **event_args):
