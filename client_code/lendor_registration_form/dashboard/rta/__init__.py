@@ -9,11 +9,36 @@ from anvil.google.drive import app_files
 import anvil.users
 
 class rta(rtaTemplate):
-  def __init__(self, **properties):
+  def __init__(self,user_id, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.user_Id = user_id
+    #self.user_id = '4891'
+    
+    
+    #initial_commitment = user_request['initial_commitment']
+    #self.output_lbl.text = f" {initial_commitment}"
 
     # Any code you write here will run before the form opens.
+  def button_2_click(self, **event_args):
+     user_request = app_tables.view_bor_loan_requests.get(customer_id=self.user_id)
+     
+     if user_request:
+      
+      initial_commitment = user_request['initial_commitment']
+      total_rta = self.tp_tb.text
+      user_request = app_tables.view_bor_loan_requests.get(initial_commitment = initial_commitment)
+      fin_rta = int(initial_commitment) + int(total_rta)
+      user_id = self.user_Idd
+      Notification("Topup added successfully").show()
+
+    # Call the server function with the correct name and parameter
+     anvil.server.call('view_bor_loan_requests', fin_rta,user_id)
+   
+
+   
+
+            
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -70,3 +95,5 @@ class rta(rtaTemplate):
   def link_13_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form("lendor_registration_form.dashboard.cp")
+
+  

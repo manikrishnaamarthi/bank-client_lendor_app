@@ -82,6 +82,12 @@ class dashboard(dashboardTemplate):
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form("bank_users.main_form")
+
+  def radio_button_1_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    if self.radio_button.enabled:
+      alert("online")
+      
     
 
   

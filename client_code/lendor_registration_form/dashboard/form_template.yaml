@@ -28,15 +28,38 @@ components:
   - type: Link
     properties: {role: null, url: '', align: right, tooltip: '', border: '', foreground: black,
       visible: true, text: Logout, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
-      spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+      spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: small,
       italic: false, background: '', bold: true, underline: false, icon: 'fa:sign-out'}
     name: link_2
     layout_properties: {grid_position: 'TSBAID,DPQGLL'}
     event_bindings: {click: link_2_click}
+    components: []
   - type: Spacer
     properties: {height: 39}
     name: spacer_1
     layout_properties: {grid_position: 'MXIXZT,JUFPEQ'}
+  - type: DropDown
+    properties:
+      role: null
+      align: right
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: black
+      items: [Online, Offline, '']
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: theme:On Secondary
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_1
+    layout_properties: {grid_position: 'DOUOYS,VUZGFS'}
   - type: GridPanel
     properties: {}
     name: grid_panel_1

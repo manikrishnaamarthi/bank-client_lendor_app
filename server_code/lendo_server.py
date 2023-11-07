@@ -30,4 +30,16 @@ def add_lendor_third_form(about,alerts,term,user_id):
     row[0]['about'] = about
     row[0]['alerts'] = alerts
     row[0]['terms'] = term
+
+import anvil.server
+
+@anvil.server.callable
+def view_bor_loan_requests(fin_rta,user_id,):
+  
+    #app_tables.view_bor_loan_requests.add_row(fin_rta=fin_rta)
+  row = app_tables.view_bor_loan_requests.search(customer_id = user_id)
+  if row:
+    row[0]['fin_rta'] = fin_rta
+
+ 
   

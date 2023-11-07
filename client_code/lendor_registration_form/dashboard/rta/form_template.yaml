@@ -23,13 +23,42 @@ components:
     name: button_1
     layout_properties: {grid_position: 'VHRVEY,QHQVGR', slot: title}
     event_bindings: {click: button_1_click}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Request Top-up Amount, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_1
-    layout_properties: {grid_position: 'WDYTAU,UAKGEV'}
+  - type: FlowPanel
+    properties: {}
+    name: flow_panel_1
+    layout_properties: {grid_position: 'XWPHYN,MXNYMU'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Initial Commitment, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_2
+      layout_properties: {grid_position: 'XWPHYN,MZWZQK'}
+    - type: Label
+      properties: {}
+      name: output_lbl
+      layout_properties: {}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: black, visible: true, text: Top Up Amount, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '#0876e8', bold: false, underline: false, icon: ''}
+    name: button_2
+    layout_properties: {grid_position: 'YKIJKD,XADOHM'}
+    event_bindings: {click: button_2_click}
+  - type: FlowPanel
+    properties: {}
+    name: flow_panel_2
+    layout_properties: {grid_position: 'YKIJKD,DDOUVN'}
+    components:
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: number, spacing_below: small, italic: false,
+        background: white, bold: false, underline: false}
+      name: tp_tb
+      layout_properties: {}
 - type: FlowPanel
   properties: {}
   name: navbar_links
