@@ -30,4 +30,14 @@ def add_lendor_third_form(about,alerts,term,user_id):
     row[0]['about'] = about
     row[0]['alerts'] = alerts
     row[0]['terms'] = term
+
+
+@anvil.server.callable
+def add_lendor_four_form(qualification,pannumber,identity,user_id):
+  row = app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['qualification'] = qualification
+    row[0]['identity_proof'] = identity
+    row[0]['pan_number'] = pannumber
+    
   

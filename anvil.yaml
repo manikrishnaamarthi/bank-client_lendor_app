@@ -92,6 +92,15 @@ db_schema:
     - name: email_user
       admin_ui: {width: 200, order: 25}
       type: string
+    - name: qualification
+      admin_ui: {width: 200, order: 26}
+      type: string
+    - name: pan_number
+      admin_ui: {order: 27, width: 200}
+      type: string
+    - name: identity_proof
+      admin_ui: {width: 200, order: 28}
+      type: media
     title: user_profile
   borrower:
     title: borrower
