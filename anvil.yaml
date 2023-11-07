@@ -98,9 +98,6 @@ db_schema:
     - name: city
       admin_ui: {width: 200, order: 14.5}
       type: string
-    - name: name
-      admin_ui: {width: 200, order: 18}
-      type: string
     - name: city_2
       admin_ui: {width: 200, order: 19}
       type: string
