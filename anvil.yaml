@@ -59,35 +59,38 @@ db_schema:
     - name: full_name
       admin_ui: {width: 200}
       type: string
-    - name: mobile_check
-      admin_ui: {width: 200}
-      type: bool
     - name: user_photo
       admin_ui: {width: 200}
       type: media
     - name: gender
       admin_ui: {width: 200, order: 7}
       type: string
-    - name: aadhaar_photo
-      admin_ui: {width: 200, order: 12}
-      type: media
-    - name: profile_status
-      admin_ui: {width: 200}
-      type: bool
-    - name: pan_number
-      admin_ui: {width: 200, order: 15}
-      type: string
-    - name: email_user
-      admin_ui: {width: 200, order: 16}
-      type: string
-    - name: last_confirm
-      admin_ui: {width: 200, order: 17}
-      type: bool
     - name: city
       admin_ui: {width: 200, order: 14.5}
       type: string
     - name: investment
       admin_ui: {width: 200, order: 18}
+      type: string
+    - name: mobile
+      admin_ui: {width: 200, order: 19}
+      type: string
+    - name: usertype
+      admin_ui: {order: 20, width: 200}
+      type: string
+    - name: about
+      admin_ui: {width: 200, order: 21}
+      type: string
+    - name: terms
+      admin_ui: {width: 200, order: 22}
+      type: bool
+    - name: alerts
+      admin_ui: {width: 200, order: 23}
+      type: bool
+    - name: mail_id
+      admin_ui: {width: 200, order: 24}
+      type: string
+    - name: email_user
+      admin_ui: {width: 200, order: 25}
       type: string
     title: user_profile
   borrower:
