@@ -12,7 +12,7 @@ class opbal(opbalTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.user_id = '9502'
+    self.user_id = '1000'
     
     #initial_commitment = user_request['initial_commitment']
         # Fetch the data for the specific user from your table

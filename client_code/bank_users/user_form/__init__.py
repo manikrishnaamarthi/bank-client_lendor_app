@@ -46,7 +46,9 @@ class user_form(user_formTemplate):
   #--this metod is for lendor--#
 
   def lendor_user_form_link_click(self, **event_args):
-    open_form('lendor_registration_form.Lender_reg_form_1')
+    userid = self.user_id
+    alert({userid})
+    open_form('lendor_registration_form.Lender_reg_form_1',user_id=self.user_id)
 
   #--------------------------------------------------------------------#
   

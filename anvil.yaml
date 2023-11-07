@@ -59,42 +59,39 @@ db_schema:
     - name: full_name
       admin_ui: {width: 200}
       type: string
-    - name: mobile
-      admin_ui: {width: 200}
-      type: number
-    - name: mobile_check
-      admin_ui: {width: 200}
-      type: bool
     - name: user_photo
       admin_ui: {width: 200}
       type: media
     - name: gender
       admin_ui: {width: 200, order: 7}
       type: string
-    - name: date_of_birth
-      admin_ui: {width: 200, order: 8}
-      type: date
-    - name: aadhaar_photo
-      admin_ui: {width: 200, order: 12}
-      type: media
-    - name: pan_photo
-      admin_ui: {width: 200, order: 13}
-      type: media
-    - name: profile_status
-      admin_ui: {width: 200}
+    - name: city
+      admin_ui: {width: 200, order: 14.5}
+      type: string
+    - name: investment
+      admin_ui: {width: 200, order: 18}
+      type: string
+    - name: mobile
+      admin_ui: {width: 200, order: 19}
+      type: string
+    - name: usertype
+      admin_ui: {order: 20, width: 200}
+      type: string
+    - name: about
+      admin_ui: {width: 200, order: 21}
+      type: string
+    - name: terms
+      admin_ui: {width: 200, order: 22}
       type: bool
-    - name: aadhaar_no
-      admin_ui: {width: 200, order: 14}
-      type: number
-    - name: pan_number
-      admin_ui: {width: 200, order: 15}
+    - name: alerts
+      admin_ui: {width: 200, order: 23}
+      type: bool
+    - name: mail_id
+      admin_ui: {width: 200, order: 24}
       type: string
     - name: email_user
-      admin_ui: {width: 200, order: 16}
+      admin_ui: {width: 200, order: 25}
       type: string
-    - name: last_confirm
-      admin_ui: {width: 200, order: 17}
-      type: bool
     title: user_profile
   borrower:
     title: borrower
@@ -122,6 +119,27 @@ db_schema:
   lendor:
     client: none
     server: full
-    columns: []
+    columns:
+    - name: name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: gender
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: city
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: investment
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: mobile
+      admin_ui: {width: 200, order: 4}
+      type: number
+    - name: email
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: photo
+      admin_ui: {width: 200, order: 6}
+      type: media
     title: lendor
 renamed: true

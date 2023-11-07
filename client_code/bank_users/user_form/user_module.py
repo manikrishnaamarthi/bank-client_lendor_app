@@ -55,7 +55,7 @@ def find_user_id(email):
     coustmer_id = user_true[0]['coustmer_id']
     return coustmer_id
   else:
-    return 0000
+    return 0000000000
 
 def last_check_status(user_id):
   return False
@@ -63,4 +63,16 @@ def last_check_status(user_id):
 def registration_engine():
   pass
   
-  
+
+def check_user_registration_form_done_or_not_engine(email):
+  userId = find_user_id(email)
+  print(userId)
+  user_talble = app_tables.user_profile.get_by_id(userId)
+  print(user_talble)
+  if user_talble:
+    check_one = user_talble['last_confirm']
+    print("check one form last check  ", check_one)
+    return check_one
+  else:
+    print("else statement was executed ")
+    return False
