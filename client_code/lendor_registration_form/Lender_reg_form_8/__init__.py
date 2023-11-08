@@ -23,11 +23,13 @@ class Lender_reg_form_8(Lender_reg_form_8Template):
     """This method is called when the button is clicked"""
 
   def button_2_click(self, **event_args):
-    lending_type = self.radio_button_1.selected
+    lending_individual= self.radio_button_1.selected
+    lending_institutional = self.radio_button_2.selected
     investment = self.text_box_1.text
     lending_period = self.text_box_2.text
     user_id = self.userId
-    anvil.server.call('add_lendor_eight_form',lending_type,lending_period,investment,user_id)
+    
+    anvil.server.call('add_lendor_eight_form',lending_period,lending_individual,lending_institutional,investment,user_id)
     if self.radio_button_1.selected:
       open_form('lendor_registration_form.Lender_reg_individual_form_1')
     elif self.radio_button_2.selected:
