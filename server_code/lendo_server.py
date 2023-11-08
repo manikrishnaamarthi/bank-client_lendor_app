@@ -76,6 +76,15 @@ def add_lendor_eight_form(lending_individual,lending_institutinal,investment,len
     row[0]['lending_institutional'] = lending_institutinal
     row[0]['investment'] = investment
     row[0]['lending_period'] = lending_period
+
+
+@anvil.server.callable
+def add_individual_first_form(empolyment_type,organization_type,company_name,user_id):
+  row = app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['employment_type'] = empolyment_type
+    row[0]['organization_type'] = organization_type
+    row
     
     
     
