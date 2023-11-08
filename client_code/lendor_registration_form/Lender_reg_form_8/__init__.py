@@ -23,17 +23,21 @@ class Lender_reg_form_8(Lender_reg_form_8Template):
     """This method is called when the button is clicked"""
 
   def button_2_click(self, **event_args):
-    lending_individual= self.radio_button_1.selected
-    lending_institutional = self.radio_button_2.selected
-    investment = self.text_box_1.text
-    lending_period = self.text_box_2.text
-    user_id = self.userId
+      lending_individual = self.radio_button_1.selected
+      lending_institutional = self.radio_button_2.selected
+      investment = self.text_box_1.text
+      lending_period = str(self.text_box_2.text)  # Convert to string
+      user_id = self.userId
+
+        # Make sure 'lending_individual' and 'lending_institutional' are passed as booleans
+      anvil.server.call('add_lendor_eight_form',  bool(lending_individual), bool(lending_institutional), investment,lending_period, user_id)
+
+      if lending_individual:
+            open_form('lendor_registration_form.Lender_reg_individual_form_1',user_id=user_id)
+      elif lending_institutional:
+            open_form('lendor_registration_form.Lender_reg_Institutional_form_1',user_id=user_id)
+        
+
     
-    anvil.server.call('add_lendor_eight_form',lending_period,lending_individual,lending_institutional,investment,user_id)
-    if self.radio_button_1.selected:
-      open_form('lendor_registration_form.Lender_reg_individual_form_1')
-    elif self.radio_button_2.selected:
-      open_form('lendor_registration_form.Lender_reg_Institutional_form_1')
-    """This method is called when the button is clicked"""
     
     
