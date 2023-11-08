@@ -149,6 +149,39 @@ db_schema:
     - name: company_name
       admin_ui: {width: 200, order: 39.0625}
       type: string
+    - name: company_address
+      admin_ui: {width: 200, order: 39.625}
+      type: string
+    - name: company_landmark
+      admin_ui: {width: 200, order: 39.4375}
+      type: string
+    - name: business_phoneno
+      admin_ui: {width: 200, order: 39.53125}
+      type: string
+    - name: annual_salary
+      admin_ui: {width: 200, order: 41}
+      type: string
+    - name: designation
+      admin_ui: {width: 200, order: 40.5}
+      type: string
+    - name: employee_id
+      admin_ui: {width: 200, order: 40.75}
+      type: media
+    - name: sixmonths_banksts
+      admin_ui: {width: 200, order: 40.875}
+      type: media
+    - name: acc_name
+      admin_ui: {width: 200, order: 40.9375}
+      type: string
+    - name: acc_number
+      admin_ui: {order: 40.90625, width: 200}
+      type: string
+    - name: acc_type
+      admin_ui: {width: 200, order: 40.921875}
+      type: string
+    - name: branch_name
+      admin_ui: {width: 200, order: 40.9296875}
+      type: string
     title: user_profile
   borrower:
     title: borrower

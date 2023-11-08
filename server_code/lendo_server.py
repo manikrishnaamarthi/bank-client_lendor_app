@@ -84,7 +84,36 @@ def add_individual_first_form(empolyment_type,organization_type,company_name,use
   if row:
     row[0]['employment_type'] = empolyment_type
     row[0]['organization_type'] = organization_type
-    row
+    row[0]['company_name'] = company_name
+
+
+@anvil.server.callable
+def add_individual_second_form(company_add,company_landmark,business_no,user_id):
+  row = app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['company_address'] = company_add
+    row[0]['company_landmark'] = company_landmark
+    row[0]['business_phoneno'] = business_no
+
+
+@anvil.server.callable
+def add_individual_third_form(annual_salary,designation,empolyee_id,bank_sts,user_id):
+  row = app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['annual_salary'] = annual_salary
+    row[0]['designation'] = designation
+    row[0]['employee_id'] = empolyee_id
+    row[0]['sixmonths_banksts'] = bank_sts
+
+
+@anvil.server.callable
+def add_individual_bank_first_form(acc_name,acc_no,acc_type,branch_name,user_id):
+  row = app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['acc_name'] = acc_name
+    row[0]['acc_number'] = acc_no
+    row[0]['acc_type'] = acc_type
+    row[0]['branch_name'] = branch_name
     
     
     
