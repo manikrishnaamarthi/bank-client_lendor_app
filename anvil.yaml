@@ -182,6 +182,15 @@ db_schema:
     - name: branch_name
       admin_ui: {width: 200, order: 40.9296875}
       type: string
+    - name: business_name
+      admin_ui: {width: 200, order: 40.96875}
+      type: string
+    - name: business_location
+      admin_ui: {width: 200, order: 40.953125}
+      type: string
+    - name: business_add
+      admin_ui: {width: 200, order: 40.9609375}
+      type: string
     title: user_profile
   borrower:
     title: borrower

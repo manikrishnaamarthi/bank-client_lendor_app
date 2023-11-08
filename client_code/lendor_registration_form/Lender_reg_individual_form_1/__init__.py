@@ -21,8 +21,11 @@ class Lender_reg_individual_form_1(Lender_reg_individual_form_1Template):
     organization_type = self.drop_down_2.selected_value
     company_name = self.text_box_1.text
     user_id = self.userId
-    anvil.server.call('add_individual_first_form',empolyment_type,organization_type,company_name,user_id)
-    open_form('lendor_registration_form.Lender_reg_individual_form_2',user_id=user_id)
+    if not empolyment_type or not organization_type or not company_name:
+      Notification("Please all the fields")
+    else:
+     anvil.server.call('add_individual_first_form',empolyment_type,organization_type,company_name,user_id)
+     open_form('lendor_registration_form.Lender_reg_individual_form_2',user_id=user_id)
     """This method is called when the button is clicked"""
 
   def button_1_click(self, **event_args):

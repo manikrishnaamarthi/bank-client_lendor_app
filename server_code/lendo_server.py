@@ -114,7 +114,15 @@ def add_individual_bank_first_form(acc_name,acc_no,acc_type,branch_name,user_id)
     row[0]['acc_number'] = acc_no
     row[0]['acc_type'] = acc_type
     row[0]['branch_name'] = branch_name
-    
+
+@anvil.server.callable
+def add_institutional_bank_first_form(business_name,business_location,business_add,branch_name,user_id):
+  row = app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['business_name'] = branch_name
+    row[0]['business_location'] = business_location
+    row[0]['business_add'] = business_add
+    row[0]['branch_name'] = branch_name
     
     
     
